@@ -1,0 +1,21 @@
+--- configure.bak	2021-02-11 15:45:24.365718334 -0500
++++ configure	2021-02-11 15:44:42.320789208 -0500
+@@ -209,12 +209,12 @@
+     cd - || exit 1
+ fi
+ 
+-if [ ! -d "src/3rd/yaml-cpp/src" ];then
+-    echo "The yaml-cpp directory is missing! Fixing by using a backup file..."
+-    cd "src/3rd" || exit 1
+-    unzip yaml-cpp.zip || exit 1
+-    cd - || exit 1
+-fi
++#if [ ! -d "src/3rd/yaml-cpp/src" ];then
++#    echo "The yaml-cpp directory is missing! Fixing by using a backup file..."
++#    cd "src/3rd" || exit 1
++#    unzip yaml-cpp.zip || exit 1
++#    cd - || exit 1
++#fi
+ 
+ text "Executing update.sh... "
+ cd src/huggle_core || exit 1
